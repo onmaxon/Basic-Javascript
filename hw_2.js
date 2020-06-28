@@ -97,9 +97,29 @@ function calc(a,b,y){
 		return a / b;
 	}
 }
-var c = calc(prompt('Первое число'),prompt('Второе число'),prompt('арифметические операции -,+,*,/'));
+var c = calc(parseInt(prompt('Первое число')),parseInt(prompt('Второе число')),prompt('арифметические операции -,+,*,/'));
 alert(c)
 
 //6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от переданного значения операции выполнить одну из арифметических операций (использовать функции из пункта 5) и вернуть полученное значение (использовать switch).
+function mathOperation(arg1, arg2, operation){
+	switch(operation){
+		case 'сложение':
+			return arg1 + arg2;
+		break;
+		case 'вычитание':
+			return arg1 - arg2;
+		break;
+		case 'умножение':
+			return arg1 * arg2;
+		break;
+		case 'деление':
+			return arg1 / arg2;
+		break;
+	}
+}
+
+alert(mathOperation(5,5,'умножение'));
+//var c = mathOperation(prompt('Первое число'),prompt('Второе число'),prompt('арифметические операции: сложение, вычитание, умножение, деление'));
+
 //7. *Сравнить null и 0. Попробуйте объяснить результат.
 //8. *С помощью рекурсии организовать функцию возведения числа в степень. Формат: function power(val, pow), где val – заданное число, pow – степень.
