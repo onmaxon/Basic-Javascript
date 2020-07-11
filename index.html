@@ -2,17 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
     <title>Document</title>
-
-<!--
-    <script>
-        var Tc = prompt(" Задать температуру в градусах по Цельсию");
-        Tf = (9 / 5) * Tc + 32
-        alert("по Фаренгейту - "+Tf);
-    </script>
--->
+<!--	<script src="hw_6.js"></script>-->
 </head>
 <body>
-	<script src="hw_5.js"></script>
+    <div class="wrap">
+        <div class="img">
+
+        </div>
+        <div class="albumWrapper">
+            <div class="album">
+
+            </div>
+            <input type="button" value="&lt;"; class="albumArrow left" id="scrollLeft" onclick="galleryApp()">
+            <input type="button" value="&gt;"; class="albumArrow right" id="scrollRight" onclick="galleryApp()">
+            
+        </div>
+    </div>
+
+    <template class="galleryItem">
+        <div class="imgThumb"></div>
+    </template>
+    <script src="hw_6.js"></script>
 </body>
 </html>
